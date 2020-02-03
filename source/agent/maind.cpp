@@ -288,7 +288,7 @@ int main()
                     } 
                 }     
             }    
-        }
+        
         
         if (ACHECKINTIME == "5m"){
             sleep(300);
@@ -299,7 +299,7 @@ int main()
         else {
             sleep(30);
         }
-    
+    }
     SSL_CTX_free (ctx);
     spdlog::info("agent shutdown gracefully");
     return 0;
