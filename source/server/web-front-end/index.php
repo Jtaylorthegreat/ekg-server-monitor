@@ -30,12 +30,19 @@ echo  "
 
         //Tab 1:
         echo "<div class='tab'> <input name='css-tabs' id='tab-1' checked='checked' class='tab-switch' type='radio'> <label for='tab-1' class='tab-label'><a href='overview.php'>Overview</a></label>
-          <div class='tab-content'>
-              Overview <br>
-              Total Registered Agents: $num_of_registered_clients<br>
-              Agents Online: $num_of_enabled_clients<br>
-              Agents Reported Offline:<font color='red'> $num_of_clients_not_ok</font><br>
-          </div>
+          <div class='tab-content'>";
+             exec("pgrep ekg-monitor", $output, $return);
+              if ($return == 0) {
+                echo" Overview <br>
+                Total Registered Agents: $num_of_registered_clients<br>
+                Agents Online: $num_of_enabled_clients<br>
+                Agents Reported Offline:<font color='red'> $num_of_clients_not_ok</font><br>";
+              }
+              else {
+                echo "<b><font color='red'>ekg-monitor service offline, Please restart this service by running:<br><br> systemctl start ekg-monitor</font></b>";
+              } 
+
+        echo"  </div>
         </div>";
 
         //Tab 2:
