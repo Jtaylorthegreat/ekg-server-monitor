@@ -1,4 +1,4 @@
-/* Copyright 2019 Justin Taylor */
+/* Copyright 2020 Justin Taylor */
 
    /*This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@
 #include <fstream>
 #include <sstream>
 #include <algorithm>
-#define VERSION "0.1"
+#define VERSION "1.0"
 
 using namespace std;
 
