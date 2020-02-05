@@ -1,5 +1,10 @@
 # ekg-server-monitor
 Simple agent based heartbeat monitor forked from  [RemoteCli](https://github.com/Jtaylorthegreat/RemoteCLI)
+<br>
+<br>
+
+![screenshot1.jpg](https://raw.githubusercontent.com/Jtaylorthegreat/ekg-server-monitor/master/screenshots/screenshot1.jpg)
+
 
 ## **Server Installation Guide**
 
