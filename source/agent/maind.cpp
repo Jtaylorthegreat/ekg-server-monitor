@@ -1,4 +1,4 @@
-/* Copyright 2019 Justin Taylor */
+/* Copyright 2020 Justin Taylor */
 
    /*This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -202,9 +202,15 @@ int main()
                     ERR_print_errors_fp (sslerrs);
                     fclose(sslerrs);
                     spdlog::debug("---------------------------------------------------------");
+                    SSL_free (ssl);
+                    close(csocket);
+                    X509_free(givencert);
                 }
                 else {
                     spdlog::error("Unsuccessful TLS/SSL handshake with server {}", IP.c_str());
+                    SSL_free (ssl);
+                    close(csocket);
+                    X509_free(givencert);
                 }
             }
             else {
