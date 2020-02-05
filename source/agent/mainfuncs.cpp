@@ -1,4 +1,4 @@
-/* Copyright 2019 Justin Taylor */
+/* Copyright 2020 Justin Taylor */
 
    /*This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -42,7 +42,7 @@ void print_help(){
         printf("                 EKG-Agent version " VERSION              "\n");
         printf("                  by Justin Taylor 2020                     \n");
         printf("\n");
-        printf("client [options]\n");
+        printf("agent [options]\n");
         printf("\n");
         printf(" --help           -h                     show this help\n");
         printf(" --register       -r                     register agent with monitoring server (must provide server registration key)\n");
