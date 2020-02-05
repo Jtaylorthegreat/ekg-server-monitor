@@ -1,4 +1,4 @@
-/* Copyright 2019 Justin Taylor */
+/* Copyright 2020 Justin Taylor */
 
    /*This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -220,6 +220,11 @@ void hblisten (SSL* ssl, char* clientconnectedfromip){
                 delete(hbderror2);
                 close (sd);
                 exit(1);
+            }
+            else {
+                spdlog::info("{} successful heartbeat", clientparsedhostname.c_str());
+                const char *hbsuccess = ":hbsuccess*--!";
+                SSL_write(ssl, hbsuccess, strlen(hbsuccess));
             }
         delete res;
         delete stmt;
