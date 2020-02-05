@@ -94,6 +94,7 @@ Enable & start the ekg-agent daemon:
  5. Select the appropriate application path to ekg-agentd.exe, set CPU usage as desired, and install service.
 ![setup_win_5.jpg](https://raw.githubusercontent.com/Jtaylorthegreat/ekg-server-monitor/master/screenshots/setup_win_5.jpg)
 ![setup_win_6.jpg](https://raw.githubusercontent.com/Jtaylorthegreat/ekg-server-monitor/master/screenshots/setup_win_6.jpg)
+
 ![setup_win_7.jpg](https://raw.githubusercontent.com/Jtaylorthegreat/ekg-server-monitor/master/screenshots/setup_win_7.jpg)
 
  6. open services.msc from the windows menu, start ekg-agentd service, also verify in the service properties that the service startup type is set to automatic
