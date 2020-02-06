@@ -1,3 +1,4 @@
+
 # ekg-server-monitor
 Simple agent based heartbeat monitor forked from  [RemoteCli](https://github.com/Jtaylorthegreat/RemoteCLI)
 <br>
@@ -47,10 +48,10 @@ Add Firewall Rules:
 <hr>
 
 
-<br>
+<br><br>
 
 ## Agent Installation guide
-
+<br>
 
 **Ubuntu 18.04:**
 
@@ -71,14 +72,20 @@ Enable & start the ekg-agent daemon:
 	systemctl start ekg-agentd
 	
 
-<br>
+<br><br>
 
-**Centos 8:**
+**Centos:**
 
 Install ekg-agent rpm:
-
-	rpm -i ekg-agent-1.0-1.el8.x86_64.rpm
-	Update "serveraddress" in agent configuration to reflect the appropriate ekg-monitor server:
+	
+    Centos 8:
+	  rpm -i ekg-agent-1.0-1.el8.x86_64.rpm
+  
+    Centos 7:
+       rpm -i ekg-agent-1.0-1.el7.x86_64.rpm
+	
+	
+Update "serveraddress" in agent configuration to reflect the appropriate ekg-monitor server:
 	
 	cd /opt/ekg-agent/
 	vi .agentconfig 
@@ -90,7 +97,7 @@ Enable & start the ekg-agentd daemon:
 
 	systemctl enable ekg-agentd
 	systemctl start ekg-agentd
-
+<br><br>
 
 **Windows:**
 
