@@ -1,4 +1,5 @@
 
+
 # ekg-server-monitor
 Simple agent based heartbeat monitor forked from  [RemoteCli](https://github.com/Jtaylorthegreat/RemoteCLI)
 <br>
@@ -43,6 +44,12 @@ Add Firewall Rules:
 
 	ufw allow http
 	ufw allow 60130/tcp
+	
+Default web login is specified in login.php file and should be changed after installation:
+
+    Default user: admin
+    Default pass: Remote!
+   
 
 
 <hr>
